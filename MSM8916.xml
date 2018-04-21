@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="git"
+          fetch="https://github.com/" />
+
+
+<!-- osprey stuff -->
+<project path="device/motorola/osprey" name="LOS-MSM8916/device_motorola_osprey" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/msm8916-common" name="LOS-MSM8916/device_motorola_msm8916-common" revision="lineage-15.1" remote="git"/>
+<project path="kernel/motorola/msm8916" name="LOS-MSM8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
+<project path="vendor/motorola" name="LOS-MSM8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
+
+<!-- common stuff -->
+<project path="device/qcom/common" name="LineageOS/android_device_qcom_common" revision="lineage-15.1" remote="git" />
+<project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" revision="lineage-15.1" remote="git"/>
+<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-15.1" remote="git"/>
+
+<!-- hal1 stuff -->
+<project path="frameworks/av" name="LOS-MSM8916/frameworks_av" revision="lineage-15.1" remote="git" />
+
+<!-- audio stuff -->
+<project path="system/media" name="LOS-MSM8916/system_media" revision="lineage-15.1" remote="git" /> 
+    
+</manifest>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lineage_repos -->
+<manifest>
+
+<remove-project name="system/media" />
+<remove-project name="frameworks/av" />
+
+</manifest>
