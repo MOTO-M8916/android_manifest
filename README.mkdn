@@ -28,9 +28,14 @@ OR, for those with limited bandwidth/storage:
 
 To start the build once everything is ready:
 
-    make otapackage -j#
-    
-\# --> Number of CPU cores 
+```bash
+# Go to the root of the source tree...
+$
+# ...and run to prepare our devices list
+$ . build/envsetup.sh
+# ... now run
+$ brunch "your device name"
+```
 
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions.
 
