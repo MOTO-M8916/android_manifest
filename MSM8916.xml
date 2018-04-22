@@ -10,6 +10,9 @@
 
 <!-- surnia stuff -->
 <project path="device/motorola/surnia" name="LOS-MSM8916/device_motorola_surnia" revision="lineage-15.1" remote="git"/>
+  
+<!-- merlin stuff -->
+<project path="device/motorola/merlin" name="LOS-MSM8916/device_motorola_merlin" revision="lineage-15.1" remote="git"/>
 
 <!-- msm8916 stuff -->
 <project path="device/motorola/msm8916-common" name="LOS-MSM8916/device_motorola_msm8916-common" revision="lineage-15.1" remote="git"/>
