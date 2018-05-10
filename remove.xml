@@ -3,6 +3,5 @@
 <manifest>
 
 <remove-project name="system/media" />
-<remove-project name="frameworks/av" />
 
 </manifest>
