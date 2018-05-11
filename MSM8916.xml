@@ -22,10 +22,7 @@
 <!-- common stuff -->
 <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" revision="lineage-15.1" remote="git" />
 <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" revision="lineage-15.1" remote="git"/>
-<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-15.1" remote="git"/
+<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-15.1" remote="git"/>
 
-<!-- audio stuff -->
-<project path="system/media" name="LOS-MSM8916/system_media" revision="lineage-15.1" remote="git" /> 
-    
 </manifest>
 
