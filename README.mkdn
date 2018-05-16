@@ -14,7 +14,6 @@ Now create a local_manifests dir
 
 Copy the required manifests in that folder.
 
-    wget -O .repo/local_manifests/remove.xml 'https://raw.githubusercontent.com/LOS-MSM8916/android_manifest/lineage-15.1/remove.xml'
     wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/LOS-MSM8916/android_manifest/lineage-15.1/MSM8916.xml'
 Add your device specific manifest there too.
 
@@ -28,14 +27,14 @@ OR, for those with limited bandwidth/storage:
 
 To start the build once everything is ready:
 
-```bash
-# Go to the root of the source tree...
-$
+Go to the root of the source tree...
+
 # ...and run to prepare our devices list
-$ . build/envsetup.sh
+
+. build/envsetup.sh
 # ... now run
-$ brunch "your device name"
-```
+
+ brunch codename (osprey/merlin/surnia)
 
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions.
 
