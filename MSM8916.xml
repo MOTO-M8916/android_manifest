@@ -19,9 +19,5 @@
 <project path="kernel/motorola/msm8916" name="LOS-MSM8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
 <project path="vendor/motorola" name="LOS-MSM8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
 
-<!-- common stuff -->
-<project path="device/qcom/common" name="LineageOS/android_device_qcom_common" revision="lineage-15.1" remote="git" />
-<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-15.1" remote="git"/>
-
 </manifest>
 
