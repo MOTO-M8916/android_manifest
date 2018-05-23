@@ -5,19 +5,12 @@
           fetch="https://github.com/" />
 
 
-<!-- osprey stuff -->
-<project path="device/motorola/osprey" name="LOS-MSM8916/device_motorola_osprey" revision="lineage-15.1" remote="git"/>
-
-<!-- surnia stuff -->
-<project path="device/motorola/surnia" name="LOS-MSM8916/device_motorola_surnia" revision="lineage-15.1" remote="git"/>
-  
-<!-- merlin stuff -->
-<project path="device/motorola/merlin" name="LOS-MSM8916/device_motorola_merlin" revision="lineage-15.1" remote="git"/>
-
-<!-- msm8916 stuff -->
-<project path="device/motorola/msm8916-common" name="LOS-MSM8916/device_motorola_msm8916-common" revision="lineage-15.1" remote="git"/>
-<project path="kernel/motorola/msm8916" name="LOS-MSM8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
-<project path="vendor/motorola" name="LOS-MSM8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
+<!-- tomato stuff -->
+<project path="device/yu/tomato" name="M8916/device_yu_tomato" revision="los15.1" remote="git"/>
+<project path="device/cyanogen/msm8916-common" name="M8916/device_cyanogen_msm8916-common" revision="8.1" remote="git"/>
+<project path="kernel/cyanogen/msm8916" name="M8916/kernel_cyanogen_msm8916" revision="lineage-15.1" remote="git"/>
+<project path="vendor/yu" name="M8916/vendor_yu" revision="8.1" remote="git"/>
+<project path="device/qcom/common" name="LineageOS/android_device_qcom_common" revision="lineage-15.1" remote="git"/>
 
 </manifest>
 
