@@ -4,20 +4,41 @@ Getting Started
 To get started with Android, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+1.Set up your environment
+
+    sudo apt-get install git-core
+    git clone https://github.com/akhilnarang/scripts
+    cd scripts
+    ./setup/<script-name>
+
+2.Run the script corresponding to your Linux Distribution . it should be in setup folder
+
+eg : 
+
+    . /setup/ubuntu1604linuxmint18.sh
+
+
+3.Then run these commands to get git all working:
+
+     git config --global user.email "you@example.com"
+     git config --global user.name "Your Name"
+
+4.Then Create a folder for lineageOS/CRDroiD and open it
+
+    mkdir lineage
+    cd lineage
+
+5.To initialize your local repository using the LineageOS trees, use a command like this:
 
     repo init -u git://github.com/LineageOS/android.git -b lineage-15.1
 
-Now create a local_manifests dir
+6.Now create a local_manifests dir and Copy the required manifests in that folder.
 
     mkdir .repo/local_manifests
 
-Copy the required manifests in that folder.
-
     wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/LOS-MSM8916/android_manifest/lineage-15.1/MSM8916.xml'
-Add your device specific manifest there too.
-
-Then to sync up:
+    
+7.Then to sync up:
 
     repo sync -c -f --force-sync
 
@@ -25,16 +46,13 @@ OR, for those with limited bandwidth/storage:
 
     repo sync -c -f --no-clone-bundle --no-tags --force-sync --optimized-fetch --prune
 
-To start the build once everything is ready:
+8.To start the build once everything is ready , Run to prepare our devices list
 
-Go to the root of the source tree...
+    . build/envsetup.sh
 
-# ...and run to prepare our devices list
+9.Now build (codename: osprey/lux/surnia/harpia/merlin)
 
-. build/envsetup.sh
-# ... now run
-
- brunch codename (osprey/merlin/surnia)
+    brunch codename  
 
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions.
 
