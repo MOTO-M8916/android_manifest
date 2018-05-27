@@ -28,9 +28,14 @@ eg :
     mkdir lineage
     cd lineage
 
-5.To initialize your local repository using the LineageOS trees, use a command like this:
+5.To initialize your local repository using the LineageOS/cRDROID trees, use a command like this:
 
     repo init -u git://github.com/LineageOS/android.git -b lineage-15.1
+     
+OR
+   
+    repo init -u git://github.com/crdroidandroid/android.git -b 8.1
+
 
 6.Now create a local_manifests dir and Copy the required manifests in that folder.
 
