@@ -6,24 +6,24 @@
 
 
 <!-- osprey stuff -->
-<project path="device/motorola/osprey" name="LOS-MSM8916/device_motorola_osprey" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/osprey" name="MOTO-M8916/device_motorola_osprey" revision="lineage-15.1" remote="git"/>
 
 <!-- surnia stuff -->
-<project path="device/motorola/surnia" name="LOS-MSM8916/device_motorola_surnia" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/surnia" name="MOTO-M8916/device_motorola_surnia" revision="lineage-15.1" remote="git"/>
   
 <!-- merlin stuff -->
-<project path="device/motorola/merlin" name="LOS-MSM8916/device_motorola_merlin" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-15.1" remote="git"/>
   
 <!-- lux stuff -->
-<project path="device/motorola/lux" name="LOS-MSM8916/device_motorola_lux" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="lineage-15.1" remote="git"/>
   
 <!-- harpia stuff -->
-<project path="device/motorola/harpia" name="LOS-MSM8916/device_motorola_harpia" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/harpia" name="MOTO-M8916/device_motorola_harpia" revision="lineage-15.1" remote="git"/>
 
 <!-- msm8916 stuff -->
-<project path="device/motorola/msm8916-common" name="LOS-MSM8916/device_motorola_msm8916-common" revision="lineage-15.1" remote="git"/>
-<project path="kernel/motorola/msm8916" name="LOS-MSM8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
-<project path="vendor/motorola" name="LOS-MSM8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
+<project path="device/motorola/msm8916-common" name="MOTO-M8916/device_motorola_msm8916-common" revision="lineage-15.1" remote="git"/>
+<project path="kernel/motorola/msm8916" name="MOTO-M8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
+<project path="vendor/motorola" name="MOTO-M8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
 
 </manifest>
 
