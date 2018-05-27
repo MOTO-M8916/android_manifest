@@ -14,8 +14,8 @@
 <!-- merlin stuff -->
 <project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-15.1" remote="git"/>
   
-<!-- lux stuff -->
-<project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="lineage-15.1" remote="git"/>
+<!-- lux stuff 
+<project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="lineage-15.1" remote="git"/> -->
   
 <!-- harpia stuff -->
 <project path="device/motorola/harpia" name="MOTO-M8916/device_motorola_harpia" revision="lineage-15.1" remote="git"/>
