@@ -36,7 +36,7 @@ eg :
 
     mkdir .repo/local_manifests
 
-    wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/LOS-MSM8916/android_manifest/lineage-15.1/MSM8916.xml'
+    wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/lineage-15.1/MSM8916.xml'
     
 7.Then to sync up:
 
