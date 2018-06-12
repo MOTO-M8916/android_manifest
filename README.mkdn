@@ -15,7 +15,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 eg : 
 
-    . /setup/ubuntu1604linuxmint18.sh
+    ./setup/ubuntu1604linuxmint18.sh
 
 
 3.Then run these commands to get git all working:
@@ -30,9 +30,11 @@ eg :
 
 5.To initialize your local repository using the LineageOS/cRDROID trees, use a command like this:
 
+LOS
+
     repo init -u git://github.com/LineageOS/android.git -b lineage-15.1
      
-OR
+OR crdroid
    
     repo init -u git://github.com/crdroidandroid/android.git -b 8.1
 
