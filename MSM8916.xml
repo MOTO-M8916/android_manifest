@@ -11,19 +11,22 @@
 <!-- surnia stuff -->
 <project path="device/motorola/surnia" name="MOTO-M8916/device_motorola_surnia" revision="lineage-15.1" remote="git"/>
 
-<!-- merlin stuff 
-<project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-15.1" remote="git"/>-->
+<!-- merlin stuff -->
+<project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-15.1" remote="git"/>
   
 <!-- lux stuff 
 <project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="lineage-15.1" remote="git"/> -->
   
-<!-- harpia stuff -->
-<project path="device/motorola/harpia" name="MOTO-M8916/device_motorola_harpia" revision="lineage-15.1" remote="git"/>
+<!-- harpia stuff
+<project path="device/motorola/harpia" name="MOTO-M8916/device_motorola_harpia" revision="lineage-15.1" remote="git"/> -->
 
 <!-- msm8916 stuff -->
 <project path="device/motorola/msm8916-common" name="MOTO-M8916/device_motorola_msm8916-common" revision="lineage-15.1" remote="git"/>
 <project path="kernel/motorola/msm8916" name="MOTO-M8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
 <project path="vendor/motorola" name="MOTO-M8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
 
+<!-- Linaro 7.2 toolchain -->
+<project name="MOTO-M8916/prebuilts_gcc_linux-x86_arm_arm-eabi-7.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" remote="git" revision="master" />
+  
 </manifest>
 
