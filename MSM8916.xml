@@ -16,7 +16,7 @@
 
 <!-- msm8916 stuff -->
 <project path="device/motorola/msm8916-common" name="MOTO-M8916/device_motorola_msm8916-common" revision="lineage-15.1" remote="git"/>
-<project path="kernel/motorola/msm8916" name="MOTO-M8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
+<project path="kernel/motorola/msm8916" name="MOTO-M8916/kernel_motorola_msm8916" revision="oreo" remote="git"/>
 <project path="vendor/motorola" name="MOTO-M8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
 
 <!-- Linaro 7.2 toolchain -->
