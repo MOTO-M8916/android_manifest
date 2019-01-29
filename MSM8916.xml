@@ -8,6 +8,7 @@
 <!-- osprey stuff -->
 <project path="device/motorola/osprey" name="MOTO-M8916/device_motorola_osprey" revision="lineage-16.0" remote="git"/>
 <project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="lineage-16.0" remote="git"/>
+  <project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-16.0" remote="git"/>
 
 <!-- msm8916 stuff -->
 <project path="device/motorola/msm8916-common" name="MOTO-M8916/device_motorola_msm8916-common" revision="lineage-16.0" remote="git"/>
