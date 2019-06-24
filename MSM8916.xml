@@ -8,12 +8,12 @@
 <!-- osprey stuff -->
 <project path="device/motorola/osprey" name="MOTO-M8916/device_motorola_osprey" revision="lineage-16.0" remote="git"/>
 <project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="lineage-16.0" remote="git"/>
-  <project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-16.0" remote="git"/>
+<project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-16.0" remote="git"/>
 
 <!-- msm8916 stuff -->
 <project path="device/motorola/msm8916-common" name="MOTO-M8916/device_motorola_msm8916-common" revision="lineage-16.0" remote="git"/>
 <project path="kernel/motorola/msm8916" name="MOTO-M8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
-<project path="vendor/motorola" name="MOTO-M8916/vendor_motorola" revision="lineage-16.0" remote="git"/>
+<project path="vendor/motorola" name="MOTO-M8916/vendor_motorola" revision="9.0" remote="git"/>
 
 </manifest>
 
