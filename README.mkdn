@@ -18,21 +18,21 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 3.Then Create a folder for Havoc and open it
 
-    mkdir havoc
-    cd havoc
+    mkdir los
+    cd los
 
 4.To initialize your local repository using the Havoc trees, use a command like this:
 
 Havoc
 
-    repo init -u https://github.com/Havoc-OS/android_manifest.git -b pie
+    repo init -u git://github.com/LineageOS/android.git -b lineage-15.1
      
 
 5.Now create a local_manifests dir and Copy the required manifests in that folder.
 
     mkdir .repo/local_manifests
 
-    wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/havoc/MSM8916.xml'
+    wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/lineage-15.1/MSM8916.xml'
     
 6.Then to sync up:
 
