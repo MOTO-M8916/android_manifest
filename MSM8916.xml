@@ -17,9 +17,9 @@
 <project path="kernel/motorola/msm8916" name="MOTO-M8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="git"/>
 <project path="vendor/motorola" name="MOTO-M8916/vendor_motorola" revision="lineage-15.1" remote="git"/>
 
-<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-15.1" />
-<project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-15.1" />
-<project name="LineageOS/android_external_bson" path="external/bson" groups="qcom" remote="github" revision="lineage-15.1" />
+<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="git" revision="lineage-15.1" />
+<project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="git" revision="lineage-15.1" />
+<project name="LineageOS/android_external_bson" path="external/bson" remote="git" revision="lineage-15.1" />
 
 </manifest>
 
