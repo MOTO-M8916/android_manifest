@@ -19,7 +19,6 @@
 
 <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="git" revision="lineage-15.1" />
 <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="git" revision="lineage-15.1" />
-<project name="LineageOS/android_system_qcom" path="system/qcom" remote="git" revision="lineage-15.1" />
 <project name="LineageOS/android_external_bson" path="external/bson" remote="git" revision="lineage-15.1" />
 
 </manifest>
