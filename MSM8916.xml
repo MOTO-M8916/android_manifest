@@ -9,6 +9,7 @@
         <project name="device_motorola_osprey" path="device/motorola/osprey" remote="moto" revision="lineage-17.1-test" />
         <project name="device_motorola_merlin" path="device/motorola/merlin" remote="moto" revision="lineage-17.1" />
         <project name="device_motorola_surnia" path="device/motorola/surnia" remote="moto" revision="lineage-17.1" />
+        <project name="device_motorola_lux" path="device/motorola/lux" remote="moto" revision="lineage-17.1" />
   
         <project name="device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="moto" revision="lineage-17.1-test" />
         <project name="kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="moto" revision="lineage-17.1" />
