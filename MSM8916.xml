@@ -15,8 +15,5 @@
         <project name="kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="moto" revision="lineage-17.1" />
         <project name="vendor_motorola" path="vendor/motorola" remote="moto" revision="lineage-17.1" />
 
-        <project name="LineageOS/android_external_bson" path="external/bson" remote="git" revision="lineage-17.1" />
-        <project name="LineageOS/android_system_qcom" path="system/qcom"  remote="git" revision="lineage-17.1" />
-
 </manifest>
 
