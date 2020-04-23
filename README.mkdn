@@ -25,7 +25,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 Havoc
 
-    repo init -u git://github.com/LineageOS/android.git -b lineage-17.1
+    repo init -u git://github.com/LineageOS/android.git -b lineage-17.1 --depth=1
      
 
 5.Now create a local_manifests dir and Copy the required manifests in that folder.
