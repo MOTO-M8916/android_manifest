@@ -18,6 +18,7 @@
 
         <project name="LineageOS/android_external_bson" path="external/bson" remote="git" revision="lineage-17.1" />
         <project name="LineageOS/android_system_qcom" path="system/qcom"  remote="git" revision="lineage-17.1" />
+        <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep"  remote="git" revision="lineage-17.1" />
 
 </manifest>
 
