@@ -18,7 +18,7 @@
         <project name="twrp_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="moto" revision="twrp" />
         <project name="kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="moto" revision="twrp" />
 
-        <project path="vendor/qcom/opensource/commonsys" name="omnirom/android_vendor_qcom_opensource_commonsys" remote="github" revision="android-9.0" />
+        <project path="vendor/qcom/opensource/commonsys" name="omnirom/android_vendor_qcom_opensource_commonsys" remote="git" revision="android-9.0" />
 
 </manifest>
 
