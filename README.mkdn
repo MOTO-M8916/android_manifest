@@ -16,39 +16,36 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
      git config --global user.email "you@example.com"
      git config --global user.name "Your Name"
 
-3.Then Create a folder for Havoc and open it
+3.Then Create a folder for twrp and open it
 
-    mkdir los
-    cd los
+    mkdir twrp
+    cd twrp
 
 4.To initialize your local repository using the Havoc trees, use a command like this:
 
 Havoc
 
-    repo init -u git://github.com/LineageOS/android.git -b lineage-17.1 --depth=1
+    repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
      
 
 5.Now create a local_manifests dir and Copy the required manifests in that folder.
 
     mkdir .repo/local_manifests
 
-    wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/lineage-17.1/MSM8916.xml'
+    wget -O .repo/local_manifests/twrp.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/twrp/twrp.xml'
     
 6.Then to sync up:
 
-    repo sync -c -f --force-sync
-
-OR, for those with limited bandwidth/storage:
-
-    repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+    repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch
 
 7.To start the build once everything is ready , Run to prepare our devices list
 
     . build/envsetup.sh
+    export ALLOW_MISSING_DEPENDENCIES=true
 
 8.Now build (codename: osprey/lux/surnia/harpia/merlin)
 
-    brunch codename  
+    lunch omni_codename-userdebug
+    mka recoveryimage
 
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions.
 
