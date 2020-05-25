@@ -6,19 +6,19 @@
   
   <remote fetch="https://github.com/MOTO-M8916" name="moto"/>
 
-        <project name="device_motorola_osprey" path="device/motorola/osprey" remote="moto" revision="lineage-17.1" />
-        <project name="device_motorola_merlin" path="device/motorola/merlin" remote="moto" revision="lineage-17.1" />
-        <project name="device_motorola_surnia" path="device/motorola/surnia" remote="moto" revision="lineage-17.1" />
-        <project name="device_motorola_lux" path="device/motorola/lux" remote="moto" revision="lineage-17.1" />
-        <project name="device_motorola_harpia" path="device/motorola/harpia" remote="moto" revision="lineage-17.1" />
+        <project name="twrp_device_motorola_osprey" path="device/motorola/osprey" remote="moto" revision="twrp" />
+        <project name="twrp_device_motorola_merlin" path="device/motorola/merlin" remote="moto" revision="twrp" />
+        <project name="twrp_device_motorola_surnia" path="device/motorola/surnia" remote="moto" revision="twrp" />
+        <project name="twrp_device_motorola_lux" path="device/motorola/lux" remote="moto" revision="twrp" />
+        <project name="twrp_device_motorola_harpia" path="device/motorola/harpia" remote="moto" revision="twrp" />
   
-        <project name="device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="moto" revision="lineage-17.1" />
-        <project name="kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="moto" revision="lineage-17.1" />
-        <project name="vendor_motorola" path="vendor/motorola" remote="moto" revision="lineage-17.1" />
+        <remove-project name="android_bootable_recovery" />
+        <project name="android_bootable_recovery" path="bootable/recovery" remote="moto" revision="pie" />
+  
+        <project name="twrp_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="moto" revision="twrp" />
+        <project name="kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="moto" revision="twrp" />
 
-        <project name="LineageOS/android_external_bson" path="external/bson" remote="git" revision="lineage-17.1" />
-        <project name="LineageOS/android_system_qcom" path="system/qcom"  remote="git" revision="lineage-17.1" />
-        <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep"  remote="git" revision="lineage-17.1" />
+        <project path="vendor/qcom/opensource/commonsys" name="omnirom/android_vendor_qcom_opensource_commonsys" remote="github" revision="android-9.0" />
 
 </manifest>
 
