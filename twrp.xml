@@ -11,11 +11,8 @@
         <project name="twrp_device_motorola_surnia" path="device/motorola/surnia" remote="moto" revision="twrp" />
         <project name="twrp_device_motorola_lux" path="device/motorola/lux" remote="moto" revision="twrp" />
         <project name="twrp_device_motorola_harpia" path="device/motorola/harpia" remote="moto" revision="twrp" />
-  
-        <remove-project name="android_bootable_recovery" />
-        <project name="android_bootable_recovery" path="bootable/recovery" remote="moto" revision="pie" />
-  
         <project name="twrp_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="moto" revision="twrp" />
+  
         <project name="kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="moto" revision="twrp" />
 
         <project path="vendor/qcom/opensource/commonsys" name="omnirom/android_vendor_qcom_opensource_commonsys" remote="git" revision="android-9.0" />
