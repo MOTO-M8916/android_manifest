@@ -30,7 +30,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
     mkdir .repo/local_manifests
 
-    wget -O .repo/local_manifests/twrp.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/twrp/twrp.xml'
+    wget -O .repo/local_manifests/twrp.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/twrp-squid/twrp.xml'
     
 6.Then to sync up:
 
