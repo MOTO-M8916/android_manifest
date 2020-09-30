@@ -1,0 +1,38 @@
+From 762590a47649acc5e9f6bd65307d8f8aec4fcd9d Mon Sep 17 00:00:00 2001
+From: Kyle Harrison <khwebmail@gmail.com>
+Date: Tue, 29 Sep 2020 17:53:12 +0100
+Subject: [PATCH] screenrecord: Lower encoder settings for legacy devices
+
+- Use AVCLevel4 as AVCLevel42 is not supported
+- Lower the bitrate
+
+Change-Id: I351cba02ca36363b3c31c738b913a34936218854
+---
+ .../android/systemui/screenrecord/ScreenMediaRecorder.java    | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/packages/SystemUI/src/com/android/systemui/screenrecord/ScreenMediaRecorder.java b/packages/SystemUI/src/com/android/systemui/screenrecord/ScreenMediaRecorder.java
+index 1a9abb9cf27..3774fe793cf 100644
+--- a/packages/SystemUI/src/com/android/systemui/screenrecord/ScreenMediaRecorder.java
++++ b/packages/SystemUI/src/com/android/systemui/screenrecord/ScreenMediaRecorder.java
+@@ -61,7 +61,7 @@ import java.util.Date;
+ public class ScreenMediaRecorder {
+     private static final int TOTAL_NUM_TRACKS = 1;
+     private static final int VIDEO_FRAME_RATE = 30;
+-    private static final int VIDEO_FRAME_RATE_TO_RESOLUTION_RATIO = 6;
++    private static final int VIDEO_FRAME_RATE_TO_RESOLUTION_RATIO = 2;
+     private static final int AUDIO_BIT_RATE = 196000;
+     private static final int AUDIO_SAMPLE_RATE = 44100;
+     private static final int MAX_DURATION_MS = 60 * 60 * 1000;
+@@ -132,7 +132,7 @@ public class ScreenMediaRecorder {
+         mMediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264);
+         mMediaRecorder.setVideoEncodingProfileLevel(
+                 MediaCodecInfo.CodecProfileLevel.AVCProfileHigh,
+-                MediaCodecInfo.CodecProfileLevel.AVCLevel42);
++                MediaCodecInfo.CodecProfileLevel.AVCLevel4);
+         mMediaRecorder.setVideoSize(screenWidth, screenHeight);
+         mMediaRecorder.setVideoFrameRate(refereshRate);
+         mMediaRecorder.setVideoEncodingBitRate(vidBitRate);
+-- 
+2.28.0
+
