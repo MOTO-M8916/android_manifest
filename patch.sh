@@ -67,6 +67,9 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P frameworks/av -f 286170 286171
 ./vendor/lineage/build/tools/repopick.py -P frameworks/av -f 256887-256888 256890-256894 256898
 
+## frameworks/base
+./vendor/lineage/build/tools/repopick.py 285750
+
 ## frameworks/native
 ./vendor/lineage/build/tools/repopick.py -P frameworks/native -f 287618
 
