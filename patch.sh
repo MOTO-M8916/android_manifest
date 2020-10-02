@@ -63,12 +63,12 @@ function apply_patch {
 ## device/lineage/sepolicy
 ./vendor/lineage/build/tools/repopick.py 287771
 
-## frameworks/av
-./vendor/lineage/build/tools/repopick.py -P frameworks/av -f 286170 286171
-./vendor/lineage/build/tools/repopick.py -P frameworks/av -f 256887-256888 256890-256894 256898
-
 ## frameworks/base
-./vendor/lineage/build/tools/repopick.py 285750
+./vendor/lineage/build/tools/repopick.py 285750 287226
+
+## frameworks/av
+./vendor/lineage/build/tools/repopick.py 286170 286171
+./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
 
 ## frameworks/native
 ./vendor/lineage/build/tools/repopick.py -P frameworks/native -f 287618
@@ -126,6 +126,3 @@ function apply_patch {
 apply_patch $TOP/vendor/lineage $PATCH_DIR/0001-TEMP-Disable-ADB-authentication.patch
 apply_patch $TOP/system/core $PATCH_DIR/0001-Revert-Move-adbd-s-legacy-USB-implementation-to-fast.patch
 apply_patch $TOP/frameworks/base $PATCH_DIR/0001-screenrecord-Lower-encoder-settings-for-legacy-devic.patch
-apply_patch $TOP/frameworks/av $PATCH_DIR/0001-camera-media-Support-legacy-HALv1-camera-in-mediaser.patch
-apply_patch $TOP/frameworks/av $PATCH_DIR/0002-Camera-check-metadata-type-before-releasing-frame.patch
-apply_patch $TOP/frameworks/base $PATCH_DIR/0001-CameraServiceProxy-Loosen-UID-check.patch
