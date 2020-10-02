@@ -63,6 +63,9 @@ function apply_patch {
 ## device/lineage/sepolicy
 ./vendor/lineage/build/tools/repopick.py 287771
 
+## external/perfetto
+./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706
+
 ## frameworks/base
 ./vendor/lineage/build/tools/repopick.py 285750 287226
 
