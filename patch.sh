@@ -129,3 +129,4 @@ function apply_patch {
 apply_patch $TOP/vendor/lineage $PATCH_DIR/0001-TEMP-Disable-ADB-authentication.patch
 apply_patch $TOP/system/core $PATCH_DIR/0001-Revert-Move-adbd-s-legacy-USB-implementation-to-fast.patch
 apply_patch $TOP/frameworks/base $PATCH_DIR/0001-screenrecord-Lower-encoder-settings-for-legacy-devic.patch
+apply_patch $TOP/external/sony/boringssl-compat $PATCH_DIR/0001-boringssl-compat-update-for-R.patch
