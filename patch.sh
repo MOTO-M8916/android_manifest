@@ -88,9 +88,6 @@ function apply_patch {
 ## packages/apps/ThemePicker
 ./vendor/lineage/build/tools/repopick.py -t eleven-theme_picker
 
-## prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
-./vendor/lineage/build/tools/repopick.py -g https://review.aosip.dev -P prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -f 14435
-
 ## system/core
 ./vendor/lineage/build/tools/repopick.py -f 286236
 
