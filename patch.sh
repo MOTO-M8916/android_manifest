@@ -76,6 +76,9 @@ function apply_patch {
 ## frameworks/native
 ./vendor/lineage/build/tools/repopick.py -P frameworks/native -f 287618
 
+## frameworks/opt/telephony
+./vendor/lineage/build/tools/repopick.py 288106 288536 288537
+
 ## hardware/libhardware
 ./vendor/lineage/build/tools/repopick.py 287794
 
@@ -87,6 +90,9 @@ function apply_patch {
 
 ## packages/apps/ThemePicker
 ./vendor/lineage/build/tools/repopick.py -t eleven-theme_picker
+
+## packages/services/Telecomm
+./vendor/lineage/build/tools/repopick.py 288107
 
 ## system/core
 ./vendor/lineage/build/tools/repopick.py -f 286236
