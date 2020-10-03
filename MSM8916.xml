@@ -39,6 +39,7 @@
 
         <project path="system/tools/dtbtool" name="LineageOS/android_system_tools_dtbtool" remote="github" revision="lineage-17.1" />
 
+        <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" />
         <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" />
         <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" />
         <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" />
