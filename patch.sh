@@ -103,6 +103,9 @@ function apply_patch {
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
 
+## vendor_codeaurora_telephony
+./vendor/lineage/build/tools/repopick.py -f 288320
+
 ## vendor_qcom_opensource_interfaces
 ./vendor/lineage/build/tools/repopick.py -f 287010
 
