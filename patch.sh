@@ -43,21 +43,17 @@ function apply_patch {
 # Example: ./vendor/lineage/build/tools/repopick.py [CHANGE_NUMBER]
 #################################################################
 
-## Build Bringup
-./vendor/lineage/build/tools/repopick.py -t eleven-build-warnings
-./vendor/lineage/build/tools/repopick.py -t eleven-build-bringup
-
 ## Art
 ./vendor/lineage/build/tools/repopick.py -P art -f 286185
 
 ## bionic
 ./vendor/lineage/build/tools/repopick.py -P bionic -f 286303-286305
 
-## bootable/recovery
-./vendor/lineage/build/tools/repopick.py -P  bootable/recovery -f 286438 286351
+## build/make
+./vendor/lineage/build/tools/repopick.py 286207
 
-## Build/Make
-./vendor/lineage/build/tools/repopick.py -f 256500 286189 286650 287090 288021-288028
+## bootable/recovery
+./vendor/lineage/build/tools/repopick.py -P  bootable/recovery -f 286351
 
 ## device/lineage/sepolicy
 ./vendor/lineage/build/tools/repopick.py 287771
@@ -66,14 +62,11 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706
 
 ## frameworks/base
-./vendor/lineage/build/tools/repopick.py 285750 287226
+./vendor/lineage/build/tools/repopick.py 287226
 
 ## frameworks/av
 ./vendor/lineage/build/tools/repopick.py 286170 286171
 ./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
-
-## frameworks/native
-./vendor/lineage/build/tools/repopick.py -P frameworks/native -f 287618
 
 ## frameworks/opt/telephony
 ./vendor/lineage/build/tools/repopick.py -P frameworks/opt/telephony 288106 288536 288537
@@ -96,31 +89,25 @@ function apply_patch {
 ## system/core
 ./vendor/lineage/build/tools/repopick.py -f 286236
 
-## system/tools/mkbootimg
-./vendor/lineage/build/tools/repopick.py -P system/tools/mkbootimg -f 287107
-
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
 
 ## vendor_codeaurora_telephony
 ./vendor/lineage/build/tools/repopick.py -f 288320
 
-## vendor_qcom_opensource_interfaces
-./vendor/lineage/build/tools/repopick.py -f 287010
-
 ## packages/apps/LineageParts
 ./vendor/lineage/build/tools/repopick.py 286435 286449
-
-## Lineage SDK
-./vendor/lineage/build/tools/repopick.py -t eleven-sdk-bringup
 
 ## QCOM Encryption
 ##./vendor/lineage/build/tools/repopick.py -t eleven-qcom-encryption
 
-## More picks for Lineage SDK bringup
-./vendor/lineage/build/tools/repopick.py -t eleven-display-rotation
-./vendor/lineage/build/tools/repopick.py 286439 286451 286390 286452 286444
+## Linked Volumes
 ./vendor/lineage/build/tools/repopick.py -t eleven-linked-volumes
+
+## Statusbar
+./vendor/lineage/build/tools/repopick.py 287719 287232
+./vendor/lineage/build/tools/repopick.py -t eleven-clock-customizations
+./vendor/lineage/build/tools/repopick.py -t eleven-network-traffic
 
 ## vendor/qcom/opensource/power
 ./vendor/lineage/build/tools/repopick.py -f 287142-287190
