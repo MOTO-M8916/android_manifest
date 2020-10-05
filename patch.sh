@@ -75,7 +75,7 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py 287794
 
 ## hardware/qcom-caf/wlan
-./vendor/lineage/build/tools/repopick.py 287117-287120 287123-287126
+#./vendor/lineage/build/tools/repopick.py 287117-287120 287123-287126
 
 ## packages/apps/Etar
 ./vendor/lineage/build/tools/repopick.py -f 285805 285806
