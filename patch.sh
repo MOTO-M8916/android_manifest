@@ -49,9 +49,6 @@ function apply_patch {
 ## bionic
 ./vendor/lineage/build/tools/repopick.py -P bionic -f 286303-286305
 
-## build/make
-./vendor/lineage/build/tools/repopick.py 286207
-
 ## bootable/recovery
 ./vendor/lineage/build/tools/repopick.py -P  bootable/recovery -f 286351
 
@@ -60,9 +57,6 @@ function apply_patch {
 
 ## external/perfetto
 ./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706
-
-## frameworks/base
-./vendor/lineage/build/tools/repopick.py 287226
 
 ## frameworks/av
 ./vendor/lineage/build/tools/repopick.py 286170 286171
@@ -86,9 +80,6 @@ function apply_patch {
 ## packages/services/Telecomm
 ./vendor/lineage/build/tools/repopick.py -P packages/services/Telecomm 288107
 
-## system/core
-./vendor/lineage/build/tools/repopick.py -f 286236
-
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
 
@@ -105,9 +96,7 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -t eleven-linked-volumes
 
 ## Statusbar
-./vendor/lineage/build/tools/repopick.py 287719 287232
 ./vendor/lineage/build/tools/repopick.py -t eleven-clock-customizations
-./vendor/lineage/build/tools/repopick.py -t eleven-network-traffic
 
 ## vendor/qcom/opensource/power
 ./vendor/lineage/build/tools/repopick.py -f 287142-287190
