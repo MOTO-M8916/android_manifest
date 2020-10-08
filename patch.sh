@@ -89,9 +89,6 @@ function apply_patch {
 ## QCOM Encryption
 ##./vendor/lineage/build/tools/repopick.py -t eleven-qcom-encryption
 
-## Linked Volumes
-./vendor/lineage/build/tools/repopick.py -t eleven-linked-volumes
-
 ## Expanded volume panel
 ./vendor/lineage/build/tools/repopick.py -t 11-expanded-volbar
 
