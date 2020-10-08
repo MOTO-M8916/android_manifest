@@ -65,16 +65,13 @@ function apply_patch {
 ## frameworks/opt/telephony
 ./vendor/lineage/build/tools/repopick.py -P frameworks/opt/telephony 288106 288536 288537
 
-## hardware/libhardware
-./vendor/lineage/build/tools/repopick.py 287794
-
 ## hardware/qcom-caf/wlan
 #./vendor/lineage/build/tools/repopick.py 287117-287120 287123-287126
 
 ## packages/apps/Etar
 ./vendor/lineage/build/tools/repopick.py -f 285805 285806
 
-## packages/apps/ThemePicker
+## packages/apps/Trebuchet
 ./vendor/lineage/build/tools/repopick.py -t eleven-theme_picker
 
 ## packages/services/Telecomm
@@ -95,8 +92,8 @@ function apply_patch {
 ## Linked Volumes
 ./vendor/lineage/build/tools/repopick.py -t eleven-linked-volumes
 
-## Statusbar
-./vendor/lineage/build/tools/repopick.py -t eleven-clock-customizations
+## Expanded volume panel
+./vendor/lineage/build/tools/repopick.py -t 11-expanded-volbar
 
 ## vendor/qcom/opensource/power
 ./vendor/lineage/build/tools/repopick.py -f 287142-287190
