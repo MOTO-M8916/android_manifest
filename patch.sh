@@ -43,6 +43,9 @@ function apply_patch {
 # Example: ./vendor/lineage/build/tools/repopick.py [CHANGE_NUMBER]
 #################################################################
 
+## Kill Lineage soong product vars
+./vendor/lineage/build/tools/repopick.py -t eleven-kill-lineage-soong-product-vars
+
 ## Art
 ./vendor/lineage/build/tools/repopick.py -P art -f 286185
 
@@ -80,11 +83,8 @@ function apply_patch {
 ## packages/apps/LineageParts
 ./vendor/lineage/build/tools/repopick.py 286435 286449
 
-## QCOM Encryption
-##./vendor/lineage/build/tools/repopick.py -t eleven-qcom-encryption
-
 ## Expanded volume panel
-./vendor/lineage/build/tools/repopick.py -t 11-expanded-volbar
+./vendor/lineage/build/tools/repopick.py -t eleven-expanded-volbar
 
 ## vendor/qcom/opensource/power
 ./vendor/lineage/build/tools/repopick.py -f 287142-287190
