@@ -59,7 +59,6 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706
 
 ## frameworks/av
-./vendor/lineage/build/tools/repopick.py 286170 286171
 ./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
 
 ## frameworks/opt/telephony
