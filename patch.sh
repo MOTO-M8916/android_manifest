@@ -70,6 +70,9 @@ function apply_patch {
 ## packages/services/Telecomm
 ./vendor/lineage/build/tools/repopick.py -P packages/services/Telecomm 288107
 
+## prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
+./vendor/lineage/build/tools/repopick.py -g https://review.aosip.dev -P prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -f 14435
+
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
 
