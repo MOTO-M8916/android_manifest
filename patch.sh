@@ -43,8 +43,8 @@ function apply_patch {
 # Example: ./vendor/lineage/build/tools/repopick.py [CHANGE_NUMBER]
 #################################################################
 
-## Art
-./vendor/lineage/build/tools/repopick.py -P art -f 286185
+## eleven-ultralegacy-devices
+./vendor/lineage/build/tools/repopick.py -t eleven-ultralegacy-devices
 
 ## bionic
 ./vendor/lineage/build/tools/repopick.py -P bionic -f 286304 286305
@@ -54,9 +54,6 @@ function apply_patch {
 
 ## device/lineage/sepolicy
 ./vendor/lineage/build/tools/repopick.py 287771
-
-## external/perfetto
-./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706
 
 ## frameworks/av
 ./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
@@ -75,9 +72,6 @@ function apply_patch {
 
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
-
-## system/core
-./vendor/lineage/build/tools/repopick.py -P system/core 289133
 
 ## packages/apps/LineageParts
 ./vendor/lineage/build/tools/repopick.py 286435 286449
