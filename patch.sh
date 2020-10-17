@@ -43,14 +43,11 @@ function apply_patch {
 # Example: ./vendor/lineage/build/tools/repopick.py [CHANGE_NUMBER]
 #################################################################
 
-## Kill Lineage soong product vars
-./vendor/lineage/build/tools/repopick.py -t eleven-kill-lineage-soong-product-vars
-
 ## Art
 ./vendor/lineage/build/tools/repopick.py -P art -f 286185
 
 ## bionic
-./vendor/lineage/build/tools/repopick.py -P bionic -f 286303-286305
+./vendor/lineage/build/tools/repopick.py -P bionic -f 286304 286305
 
 ## bootable/recovery
 ./vendor/lineage/build/tools/repopick.py -P  bootable/recovery -f 286351
@@ -96,5 +93,4 @@ function apply_patch {
 #################################################################
 
 apply_patch $TOP/vendor/lineage $PATCH_DIR/0001-TEMP-Disable-ADB-authentication.patch
-apply_patch $TOP/frameworks/base $PATCH_DIR/0001-screenrecord-Lower-encoder-settings-for-legacy-devic.patch
 apply_patch $TOP/external/sony/boringssl-compat $PATCH_DIR/0001-boringssl-compat-update-for-R.patch
