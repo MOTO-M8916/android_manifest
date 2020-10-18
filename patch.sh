@@ -81,9 +81,6 @@ function apply_patch {
 ## Expanded volume panel
 ./vendor/lineage/build/tools/repopick.py -t eleven-expanded-volbar
 
-## vendor/qcom/opensource/power
-./vendor/lineage/build/tools/repopick.py -f 287142-287190
-
 #################################################################
 # PATCHES
 #
