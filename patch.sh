@@ -44,7 +44,9 @@ function apply_patch {
 #################################################################
 
 ## eleven-ultralegacy-devices
-./vendor/lineage/build/tools/repopick.py -t eleven-ultralegacy-devices
+./vendor/lineage/build/tools/repopick.py -P art -f 286185
+./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706
+./vendor/lineage/build/tools/repopick.py 289133 289841
 
 ## bionic
 ./vendor/lineage/build/tools/repopick.py -P bionic -f 286304 286305
