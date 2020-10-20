@@ -65,7 +65,7 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P frameworks/opt/telephony 288106 288536 288537
 
 ## hardware/qcom-caf/wlan
-./vendor/lineage/build/tools/repopick.py 287117-287120 287123-287126 289679
+./vendor/lineage/build/tools/repopick.py 287117-287120 287123-287126 290021
 
 ## packages/services/Telecomm
 ./vendor/lineage/build/tools/repopick.py -P packages/services/Telecomm 288107
