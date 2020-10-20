@@ -79,9 +79,6 @@ function apply_patch {
 ## packages/apps/LineageParts
 ./vendor/lineage/build/tools/repopick.py 286435 286449
 
-## Expanded volume panel
-./vendor/lineage/build/tools/repopick.py -t eleven-expanded-volbar
-
 #################################################################
 # PATCHES
 #
