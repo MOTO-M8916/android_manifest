@@ -71,6 +71,9 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -t eleven-qcom-legacy-sepolicy
 ./vendor/lineage/build/tools/repopick.py -f 291753
 
+## Trebuchet
+./vendor/lineage/build/tools/repopick.py -t eleven-trebuchet -e 289536
+
 #################################################################
 # PATCHES
 #
