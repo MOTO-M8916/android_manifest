@@ -49,6 +49,9 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P system/core 289133
 ./vendor/lineage/build/tools/repopick.py -P vendor/lineage 289841
 
+# Boringssl-compat
+./vendor/lineage/build/tools/repopick.py -P external/sony/boringssl-compat 290309
+
 ## bionic
 ./vendor/lineage/build/tools/repopick.py -P bionic -f 286304 286305
 
@@ -86,4 +89,3 @@ function apply_patch {
 #################################################################
 
 apply_patch $TOP/vendor/lineage $PATCH_DIR/0001-TEMP-Disable-ADB-authentication.patch
-apply_patch $TOP/external/sony/boringssl-compat $PATCH_DIR/0001-boringssl-compat-update-for-R.patch
