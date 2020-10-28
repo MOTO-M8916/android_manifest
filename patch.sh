@@ -74,7 +74,7 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P packages/services/Telecomm 288107
 
 ## prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
-./vendor/lineage/build/tools/repopick.py -g https://review.aosip.dev -P prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -f 14435
+./vendor/lineage/build/tools/repopick.py -P prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 290835
 
 ## system/qcom
 ./vendor/lineage/build/tools/repopick.py -P system/qcom -t eleven-qsap
