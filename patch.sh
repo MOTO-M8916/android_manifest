@@ -73,20 +73,11 @@ function apply_patch {
 ## packages/services/Telecomm
 ./vendor/lineage/build/tools/repopick.py -P packages/services/Telecomm 288107
 
-## prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
-./vendor/lineage/build/tools/repopick.py -P prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 290835
-
-## system/qcom
-./vendor/lineage/build/tools/repopick.py -P system/qcom -t eleven-qsap
-
 ## system/tools/dtbtool
 ./vendor/lineage/build/tools/repopick.py 290314
 
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
-
-## packages/apps/LineageParts
-./vendor/lineage/build/tools/repopick.py 286435 286449
 
 #################################################################
 # PATCHES
