@@ -49,9 +49,6 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P system/core 289133
 ./vendor/lineage/build/tools/repopick.py -P vendor/lineage 289841
 
-# Boringssl-compat
-./vendor/lineage/build/tools/repopick.py -P external/sony/boringssl-compat 290309
-
 ## bionic
 ./vendor/lineage/build/tools/repopick.py -P bionic -f 286304 286305
 
@@ -64,17 +61,8 @@ function apply_patch {
 ## frameworks/av
 ./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
 
-## frameworks/opt/telephony
-./vendor/lineage/build/tools/repopick.py -P frameworks/opt/telephony 288106 288536 288537
-
 ## hardware/qcom-caf/wlan
-./vendor/lineage/build/tools/repopick.py 287117-287119 287124-287126 290021
-
-## packages/services/Telecomm
-./vendor/lineage/build/tools/repopick.py -P packages/services/Telecomm 288107
-
-## system/tools/dtbtool
-./vendor/lineage/build/tools/repopick.py 290314
+./vendor/lineage/build/tools/repopick.py 287125 287126 290021
 
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
