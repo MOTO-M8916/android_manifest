@@ -16,14 +16,12 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
      git config --global user.email "you@example.com"
      git config --global user.name "Your Name"
 
-3.Then Create a folder for Havoc and open it
+3.Then Create a folder for LineageOS and open it
 
     mkdir los
     cd los
 
 4.To initialize your local repository using the LineageOS trees, use a command like this:
-
-Havoc
 
     repo init -u git://github.com/LineageOS/android.git -b lineage-18.0 --depth=1
      
