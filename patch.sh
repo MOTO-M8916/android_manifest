@@ -55,9 +55,6 @@ function apply_patch {
 ## bootable/recovery
 ./vendor/lineage/build/tools/repopick.py -P  bootable/recovery -f 286351
 
-## device/lineage/sepolicy
-./vendor/lineage/build/tools/repopick.py 287771
-
 ## frameworks/av
 ./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
 
