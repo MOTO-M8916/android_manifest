@@ -43,6 +43,11 @@ function apply_patch {
 # Example: ./vendor/lineage/build/tools/repopick.py [CHANGE_NUMBER]
 #################################################################
 
+## Device Tree
+
+## msm8916-common
+./vendor/lineage/build/tools/repopick.py -p 290887
+
 ## eleven-ultralegacy-devices
 ./vendor/lineage/build/tools/repopick.py -P art -f 286185
 ./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706

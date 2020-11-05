@@ -4,20 +4,7 @@
   <remote name="git"
           fetch="https://github.com/" />
 
-        <project name="MOTO-M8916/android_device_motorola_osprey" path="device/motorola/osprey" remote="git" revision="lineage-18.0" />
-        <project name="MOTO-M8916/android_device_motorola_merlin" path="device/motorola/merlin" remote="git" revision="lineage-18.0" />
-        <project name="MOTO-M8916/android_device_motorola_surnia" path="device/motorola/surnia" remote="git" revision="lineage-18.0" />
-        <project name="MOTO-M8916/android_device_motorola_lux" path="device/motorola/lux" remote="git" revision="lineage-18.0" />
-        <project name="MOTO-M8916/android_device_motorola_harpia" path="device/motorola/harpia" remote="git" revision="lineage-18.0" />
-  
-        <project name="MOTO-M8916/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="git" revision="lineage-18.0" />
-        <project name="MOTO-M8916/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="git" revision="lineage-18.0" />
         <project name="MOTO-M8916/vendor_motorola" path="vendor/motorola" remote="git" revision="lineage-18.0" />
-
-        <project name="LineageOS/android_external_bson" path="external/bson" />
-        <project name="LineageOS/android_system_qcom" path="system/qcom" />
-        <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
-        <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat"  />
 
         <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy" revision="lineage-18.0-legacy" />
 
