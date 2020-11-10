@@ -64,6 +64,13 @@ function apply_patch {
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
 
+## vendor/lineage
+./vendor/lineage/build/tools/repopick.py 292258
+
+## eleven-qcom-legacy-sepolicy
+./vendor/lineage/build/tools/repopick.py -t eleven-qcom-legacy-sepolicy
+./vendor/lineage/build/tools/repopick.py -f 291753
+
 #################################################################
 # PATCHES
 #
