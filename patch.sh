@@ -69,7 +69,6 @@ function apply_patch {
 
 ## eleven-qcom-legacy-sepolicy
 ./vendor/lineage/build/tools/repopick.py -t eleven-qcom-legacy-sepolicy
-./vendor/lineage/build/tools/repopick.py -f 291753
 
 ## Trebuchet
 ./vendor/lineage/build/tools/repopick.py -t eleven-trebuchet -e 289536
@@ -81,3 +80,6 @@ function apply_patch {
 #################################################################
 
 apply_patch $TOP/vendor/lineage $PATCH_DIR/0001-TEMP-Disable-ADB-authentication.patch
+apply_patch $TOP/device/qcom/sepolicy-legacy $PATCH_DIR/0001-sepolicy-Switch-to-BOARD_VENDOR_SEPOLICY_DIRS.patch
+apply_patch $TOP/system/sepolicy $PATCH_DIR/0001-sepolicy-Treat-proc-based-DT-fstab-the-same-and-sys-.patch
+apply_patch $TOP/system/sepolicy $PATCH_DIR/0002-Allow-init-to-write-to-proc-cpu-alignment.patch

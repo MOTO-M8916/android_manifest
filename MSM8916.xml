@@ -19,6 +19,7 @@
         <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
         <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat"  />
 
+        <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy" revision="lineage-18.0-legacy" />
         <project path="packages/apps/FMRadio" name="LineageOS/android_packages_apps_FMRadio" remote="github" revision="lineage-17.1"/>
         <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" remote="github" revision="lineage-17.1"/>
 
