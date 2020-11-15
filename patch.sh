@@ -73,6 +73,9 @@ function apply_patch {
 ## Trebuchet
 ./vendor/lineage/build/tools/repopick.py -t eleven-trebuchet -e 289536
 
+## Telephony Ext
+./vendor/lineage/build/tools/repopick.py -t eleven-qc-telephony-ext
+
 #################################################################
 # PATCHES
 #
