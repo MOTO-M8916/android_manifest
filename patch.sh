@@ -81,5 +81,3 @@ function apply_patch {
 #
 # Example: apply_patch [REPO_DIR] [PATCH_FILE]
 #################################################################
-
-apply_patch $TOP/vendor/lineage $PATCH_DIR/0001-TEMP-Disable-ADB-authentication.patch
