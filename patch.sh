@@ -52,14 +52,14 @@ function apply_patch {
 ## bionic
 ./vendor/lineage/build/tools/repopick.py -P bionic -f 286304 286305
 
-## bootable/recovery
-./vendor/lineage/build/tools/repopick.py -P  bootable/recovery -f 286351
-
 ## frameworks/av
 ./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
 
 ## hardware/qcom-caf/wlan
 ./vendor/lineage/build/tools/repopick.py 287125 287126 290021
+
+## system/sepolicy
+./vendor/lineage/build/tools/repopick.py -P system/sepolicy 292766 292767
 
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
@@ -83,6 +83,3 @@ function apply_patch {
 #################################################################
 
 apply_patch $TOP/vendor/lineage $PATCH_DIR/0001-TEMP-Disable-ADB-authentication.patch
-apply_patch $TOP/device/qcom/sepolicy-legacy $PATCH_DIR/0001-sepolicy-Switch-to-BOARD_VENDOR_SEPOLICY_DIRS.patch
-apply_patch $TOP/system/sepolicy $PATCH_DIR/0001-sepolicy-Treat-proc-based-DT-fstab-the-same-and-sys-.patch
-apply_patch $TOP/system/sepolicy $PATCH_DIR/0002-Allow-init-to-write-to-proc-cpu-alignment.patch
