@@ -55,6 +55,15 @@ function apply_patch {
 ## frameworks/av
 ./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
 
+## hardware/qcom-caf/msm8916/audio
+./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/audio 293096-293098
+
+## hardware/qcom-caf/msm8916/display
+./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/display 293099-293100
+
+## hardware/qcom-caf/msm8916/media
+./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/media 293101-293104
+
 ## hardware/qcom-caf/wlan
 ./vendor/lineage/build/tools/repopick.py 287125 287126 290021
 
