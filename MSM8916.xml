@@ -19,6 +19,4 @@
         <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
         <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat"  />
 
-        <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy" revision="lineage-18.0-legacy" />
-
 </manifest>

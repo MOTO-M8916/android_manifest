@@ -68,16 +68,13 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py 287125 287126 290021
 
 ## system/sepolicy
-./vendor/lineage/build/tools/repopick.py -P system/sepolicy 292766 292767
+./vendor/lineage/build/tools/repopick.py -P system/sepolicy 292244 292766 292767
 
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
 
 ## vendor/lineage
 ./vendor/lineage/build/tools/repopick.py 292258
-
-## eleven-qcom-legacy-sepolicy
-./vendor/lineage/build/tools/repopick.py -t eleven-qcom-legacy-sepolicy
 
 ## Trebuchet
 ./vendor/lineage/build/tools/repopick.py -t eleven-trebuchet -e 289536
