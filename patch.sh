@@ -52,9 +52,6 @@ function apply_patch {
 ## bionic
 ./vendor/lineage/build/tools/repopick.py -P bionic -f 286304 286305
 
-## frameworks/av
-./vendor/lineage/build/tools/repopick.py -t eleven-legacy-camera
-
 ## hardware/qcom-caf/msm8916/audio
 ./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/audio 293096-293098
 
@@ -72,9 +69,6 @@ function apply_patch {
 
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
-
-## vendor/lineage
-./vendor/lineage/build/tools/repopick.py 292258
 
 ## Trebuchet
 ./vendor/lineage/build/tools/repopick.py -t eleven-trebuchet -e 289536
