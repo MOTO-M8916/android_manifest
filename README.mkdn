@@ -39,12 +39,18 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 OR, for those with limited bandwidth/storage:
 
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+    
+7.Run this command if you used the automatic method of setup above (50GB ccache)
 
-7.To start the build once everything is ready , Run to prepare our devices list
+    ccache -M 50G
+    export USE_CCACHE=1
+    export CCACHE_EXEC=$(command -v ccache)
+
+8.To start the build once everything is ready , Run to prepare our devices list
 
     . build/envsetup.sh
 
-8.Now build (codename: osprey/lux/surnia/harpia/merlin)
+9.Now build (codename: osprey/lux/surnia/harpia/merlin)
 
     brunch codename  
 
