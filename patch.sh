@@ -73,6 +73,9 @@ function apply_patch {
 ## Telephony Ext
 ./vendor/lineage/build/tools/repopick.py -t eleven-qc-telephony-ext
 
+## SurfaceFlinger
+./vendor/lineage/build/tools/repopick.py -t eleven-disable-postrender-cleanup
+
 #################################################################
 # PATCHES
 #
