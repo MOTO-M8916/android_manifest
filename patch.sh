@@ -43,6 +43,12 @@ function apply_patch {
 # Example: ./vendor/lineage/build/tools/repopick.py [CHANGE_NUMBER]
 #################################################################
 
+## Device Tree: eleven_m8916
+./vendor/lineage/build/tools/repopick.py -P device/motorola/msm8916-common -t eleven_m8916
+
+## Bringup Hax (Disable LiveDisplay & mm-pp-daemon)
+#./vendor/lineage/build/tools/repopick.py 290887
+
 ## eleven-ultralegacy-devices
 ./vendor/lineage/build/tools/repopick.py -P art -f 286185
 ./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706
