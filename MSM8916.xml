@@ -7,7 +7,7 @@
         <project name="LineageOS/android_device_motorola_osprey" path="device/motorola/osprey" remote="git" revision="lineage-18.0" />
         <project name="LineageOS/android_device_motorola_merlin" path="device/motorola/merlin" remote="git" revision="lineage-18.0" />
         <project name="LineageOS/android_device_motorola_surnia" path="device/motorola/surnia" remote="git" revision="lineage-18.0" />
-        <project name="MOTO-M8916/android_device_motorola_lux" path="device/motorola/lux" remote="git" revision="lineage-18.0" />
+        <project name="LineageOS/android_device_motorola_lux" path="device/motorola/lux" remote="git" revision="lineage-18.0" />
         <project name="LineageOS/android_device_motorola_harpia" path="device/motorola/harpia" remote="git" revision="lineage-18.0" />
   
         <project name="LineageOS/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="git" revision="lineage-18.0" />
