@@ -40,17 +40,20 @@ OR, for those with limited bandwidth/storage:
 
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
     
-7.Run this command if you used the automatic method of setup above (50GB ccache)
+7.Run this command if you used the automatic method of setup above (50GB ccache (onetime requirement))
 
     ccache -M 50G
+    
+8.Run this to enable ccache
+
     export USE_CCACHE=1
     export CCACHE_EXEC=$(command -v ccache)
 
-8.To start the build once everything is ready , Run to prepare our devices list
+9.To start the build once everything is ready , Run to prepare our devices list
 
     . build/envsetup.sh
 
-9.Now build (codename: osprey/lux/surnia/harpia/merlin)
+10.Now build (codename: osprey/lux/surnia/harpia/merlin)
 
     brunch codename  
 
