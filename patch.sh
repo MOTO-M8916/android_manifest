@@ -67,6 +67,9 @@ function apply_patch {
 ## hardware/qcom-caf/wlan
 ./vendor/lineage/build/tools/repopick.py 287125 287126 290021
 
+## hardware/ril
+./vendor/lineage/build/tools/repopick.py -P hardware/ril 286832 287533 287534 287535 287536
+
 ## system/sepolicy
 ./vendor/lineage/build/tools/repopick.py -P system/sepolicy 292244 292766 292767
 
