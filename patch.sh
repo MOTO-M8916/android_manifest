@@ -65,7 +65,7 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/media 293101-293104
 
 ## hardware/qcom-caf/wlan
-./vendor/lineage/build/tools/repopick.py 287125 287126 290021
+./vendor/lineage/build/tools/repopick.py 287125 290021
 
 ## hardware/ril
 ./vendor/lineage/build/tools/repopick.py -P hardware/ril 286832 287533 287534 287535 287536
