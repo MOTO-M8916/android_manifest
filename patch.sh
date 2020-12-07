@@ -73,9 +73,6 @@ function apply_patch {
 ## hardware/ril
 ./vendor/lineage/build/tools/repopick.py -P hardware/ril 286832 287533 287534 287535 287536
 
-## kernel/motorola/msm8916
-./vendor/lineage/build/tools/repopick.py -P kernel/motorola/msm8916 295266 295267
-
 ## system/sepolicy
 ./vendor/lineage/build/tools/repopick.py -P system/sepolicy 292244 292766 292767
 
