@@ -17,6 +17,8 @@
         <project name="LineageOS/android_external_bson" path="external/bson" />
         <project name="LineageOS/android_system_qcom" path="system/qcom" />
         <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
-        <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat"  />
+        <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
+
+        <project name="LineageOS/android_packages_apps_Snap" path="packages/apps/Snap" />
 
 </manifest>

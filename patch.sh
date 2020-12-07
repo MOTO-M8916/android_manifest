@@ -73,6 +73,9 @@ function apply_patch {
 ## hardware/ril
 ./vendor/lineage/build/tools/repopick.py -P hardware/ril 286832 287533 287534 287535 287536
 
+## kernel/motorola/msm8916
+./vendor/lineage/build/tools/repopick.py -P kernel/motorola/msm8916 295266 295267
+
 ## system/sepolicy
 ./vendor/lineage/build/tools/repopick.py -P system/sepolicy 292244 292766 292767
 
@@ -84,6 +87,9 @@ function apply_patch {
 
 ## SurfaceFlinger
 ./vendor/lineage/build/tools/repopick.py -t eleven-disable-postrender-cleanup
+
+## Snap
+cd packages/apps/Snap && git pull "https://github.com/LineageOS/android_packages_apps_Snap" refs/changes/11/294911/1 && cd $TOP
 
 #################################################################
 # PATCHES
