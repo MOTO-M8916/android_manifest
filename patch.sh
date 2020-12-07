@@ -67,9 +67,6 @@ function apply_patch {
 ## hardware/qcom-caf/wlan
 ./vendor/lineage/build/tools/repopick.py 287125 290021
 
-## hardware/ril
-./vendor/lineage/build/tools/repopick.py -P hardware/ril 286832 287533 287534 287535 287536
-
 ## kernel/motorola/msm8916
 ./vendor/lineage/build/tools/repopick.py -t m8916-wireguard
 
@@ -80,10 +77,7 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
 
 ## Trebuchet
-./vendor/lineage/build/tools/repopick.py -t eleven-trebuchet -e 289536
-
-## SurfaceFlinger
-./vendor/lineage/build/tools/repopick.py -t eleven-disable-postrender-cleanup
+./vendor/lineage/build/tools/repopick.py -p packages/apps/Trebuchet 289553
 
 ## Snap
 cd packages/apps/Snap && git pull "https://github.com/LineageOS/android_packages_apps_Snap" refs/changes/11/294911/1 && cd $TOP
