@@ -55,9 +55,6 @@ function apply_patch {
 ./vendor/lineage/build/tools/repopick.py -P system/core 292788
 ./vendor/lineage/build/tools/repopick.py -P vendor/lineage 289841
 
-## eleven-fde-crash-fix
-./vendor/lineage/build/tools/repopick.py -t eleven-fde-crash-fix
-
 ## hardware/qcom-caf/msm8916/audio
 ./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/audio 293096-293098
 
