@@ -76,9 +76,6 @@ function apply_patch {
 ## system/vold
 ./vendor/lineage/build/tools/repopick.py -t eleven-vold
 
-## Trebuchet
-./vendor/lineage/build/tools/repopick.py -p packages/apps/Trebuchet 289553
-
 ## Snap
 cd packages/apps/Snap && git pull "https://github.com/LineageOS/android_packages_apps_Snap" refs/changes/11/294911/1 && cd $TOP
 
