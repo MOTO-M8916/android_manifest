@@ -23,7 +23,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 4.To initialize your local repository using the LineageOS trees, use a command like this:
 
-    repo init -u git://github.com/LineageOS/android.git -b lineage-18.0 --depth=1
+    repo init -u git://github.com/LineageOS/android.git -b lineage-18.1 --depth=1
      
 
 5.Now create a local_manifests dir and Copy the required manifests in that folder.
