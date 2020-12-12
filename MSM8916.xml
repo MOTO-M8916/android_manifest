@@ -4,15 +4,15 @@
   <remote name="git"
           fetch="https://github.com/" />
 
-        <project name="LineageOS/android_device_motorola_osprey" path="device/motorola/osprey" remote="git" revision="lineage-18.0" />
-        <project name="LineageOS/android_device_motorola_merlin" path="device/motorola/merlin" remote="git" revision="lineage-18.0" />
-        <project name="LineageOS/android_device_motorola_surnia" path="device/motorola/surnia" remote="git" revision="lineage-18.0" />
-        <project name="LineageOS/android_device_motorola_lux" path="device/motorola/lux" remote="git" revision="lineage-18.0" />
-        <project name="LineageOS/android_device_motorola_harpia" path="device/motorola/harpia" remote="git" revision="lineage-18.0" />
+        <project name="LineageOS/android_device_motorola_osprey" path="device/motorola/osprey" remote="git" revision="lineage-18.1" />
+        <project name="LineageOS/android_device_motorola_merlin" path="device/motorola/merlin" remote="git" revision="lineage-18.1" />
+        <project name="LineageOS/android_device_motorola_surnia" path="device/motorola/surnia" remote="git" revision="lineage-18.1" />
+        <project name="LineageOS/android_device_motorola_lux" path="device/motorola/lux" remote="git" revision="lineage-18.1" />
+        <project name="LineageOS/android_device_motorola_harpia" path="device/motorola/harpia" remote="git" revision="lineage-18.1" />
   
-        <project name="LineageOS/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="git" revision="lineage-18.0" />
-        <project name="LineageOS/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="git" revision="lineage-18.0" />
-        <project name="TheMuppets/proprietary_vendor_motorola" path="vendor/motorola" remote="git" revision="lineage-18.0" />
+        <project name="LineageOS/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="git" revision="lineage-18.1" />
+        <project name="LineageOS/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="git" revision="lineage-18.1" />
+        <project name="TheMuppets/proprietary_vendor_motorola" path="vendor/motorola" remote="git" revision="lineage-18.1" />
 
         <project name="LineageOS/android_external_bson" path="external/bson" />
         <project name="LineageOS/android_system_qcom" path="system/qcom" />
