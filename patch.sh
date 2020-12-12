@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. build/envsetup.sh
+
 TOP=${PWD}
 PATCH_DIR=$TOP
 
@@ -44,34 +46,34 @@ function apply_patch {
 #################################################################
 
 ## Device Tree: eleven_m8916
-./vendor/lineage/build/tools/repopick.py -P device/motorola/msm8916-common -t 18_moto8916
+repopick -P device/motorola/msm8916-common -t 18_moto8916
 
 ## Bringup Hax (Disable LiveDisplay & mm-pp-daemon)
-#./vendor/lineage/build/tools/repopick.py 296163
+#repopick 296163
 
 ## eleven-ultralegacy-devices
-./vendor/lineage/build/tools/repopick.py -P art -f 286185
-./vendor/lineage/build/tools/repopick.py -P external/perfetto 287706
-./vendor/lineage/build/tools/repopick.py -P system/core 292788
-./vendor/lineage/build/tools/repopick.py -P vendor/lineage 289841
+repopick -P art -f 286185
+repopick -P external/perfetto 287706
+repopick -P system/core 292788
+repopick -P vendor/lineage 289841
 
 ## hardware/qcom-caf/msm8916/audio
-./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/audio 293096-293098
+repopick -P hardware/qcom-caf/msm8916/audio 293096-293098
 
 ## hardware/qcom-caf/msm8916/display
-./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/display 293099-293100
+repopick -P hardware/qcom-caf/msm8916/display 293099-293100
 
 ## hardware/qcom-caf/msm8916/media
-./vendor/lineage/build/tools/repopick.py -P hardware/qcom-caf/msm8916/media 293101-293104
+repopick -P hardware/qcom-caf/msm8916/media 293101-293104
 
 ## hardware/qcom-caf/wlan
-./vendor/lineage/build/tools/repopick.py 287125 290021
+repopick 287125 290021
 
 ## system/sepolicy
-./vendor/lineage/build/tools/repopick.py -P system/sepolicy 292244 292766 292767
+repopick -P system/sepolicy 292244 292766 292767
 
 ## system/vold
-./vendor/lineage/build/tools/repopick.py -t eleven-vold
+repopick -t eleven-vold
 
 ## Snap
 cd packages/apps/Snap && git pull "https://github.com/LineageOS/android_packages_apps_Snap" refs/changes/11/294911/1 && cd $TOP
