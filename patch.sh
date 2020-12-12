@@ -44,10 +44,10 @@ function apply_patch {
 #################################################################
 
 ## Device Tree: eleven_m8916
-./vendor/lineage/build/tools/repopick.py -P device/motorola/msm8916-common -t eleven_m8916
+./vendor/lineage/build/tools/repopick.py -P device/motorola/msm8916-common -t 18_moto8916
 
 ## Bringup Hax (Disable LiveDisplay & mm-pp-daemon)
-#./vendor/lineage/build/tools/repopick.py 290887
+#./vendor/lineage/build/tools/repopick.py 296163
 
 ## eleven-ultralegacy-devices
 ./vendor/lineage/build/tools/repopick.py -P art -f 286185
@@ -66,9 +66,6 @@ function apply_patch {
 
 ## hardware/qcom-caf/wlan
 ./vendor/lineage/build/tools/repopick.py 287125 290021
-
-## kernel/motorola/msm8916
-./vendor/lineage/build/tools/repopick.py -t m8916-wireguard
 
 ## system/sepolicy
 ./vendor/lineage/build/tools/repopick.py -P system/sepolicy 292244 292766 292767
