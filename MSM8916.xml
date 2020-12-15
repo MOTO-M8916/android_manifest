@@ -14,11 +14,11 @@
         <project name="LineageOS/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="git" revision="lineage-18.1" />
         <project name="TheMuppets/proprietary_vendor_motorola" path="vendor/motorola" remote="git" revision="lineage-18.1" />
 
-        <project name="LineageOS/android_external_bson" path="external/bson"  revision="lineage-18.0" />
-        <project name="LineageOS/android_system_qcom" path="system/qcom"  revision="lineage-18.0" />
-        <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
-        <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat"  revision="lineage-18.0" />
+        <project name="LineageOS/android_external_bson" path="external/bson" remote="git" revision="lineage-18.1" />
+        <project name="LineageOS/android_system_qcom" path="system/qcom" remote="git" revision="lineage-18.1" />
+        <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="git" revision="lineage-18.1" />
+        <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="git" revision="lineage-18.1" />
 
-        <project name="LineageOS/android_packages_apps_Snap" path="packages/apps/Snap" />
+        <project name="LineageOS/android_packages_apps_Snap" path="packages/apps/Snap" remote="git" revision="lineage-18.1" />
 
 </manifest>
