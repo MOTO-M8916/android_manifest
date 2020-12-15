@@ -52,10 +52,7 @@ repopick -P device/motorola/msm8916-common -t 18_moto8916
 #repopick 296163
 
 ## eleven-ultralegacy-devices
-repopick -P art -f 286185
-repopick -P external/perfetto 287706
 repopick -P system/core 292788
-repopick -P vendor/lineage 289841
 
 ## hardware/qcom-caf/msm8916/audio
 repopick -P hardware/qcom-caf/msm8916/audio 293096-293098
@@ -68,9 +65,6 @@ repopick -P hardware/qcom-caf/msm8916/media 293101-293104
 
 ## hardware/qcom-caf/wlan
 repopick 287125 290021
-
-## system/sepolicy
-repopick -P system/sepolicy 292244 292766 292767
 
 ## system/vold
 repopick -t eleven-vold
