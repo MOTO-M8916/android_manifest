@@ -57,9 +57,6 @@ repopick -P system/core 292788
 ## hardware/interfaces
 repopick 296611
 
-## hardware/qcom-caf/wlan
-repopick 287125
-
 ## system/vold
 repopick -t eleven-vold
 
