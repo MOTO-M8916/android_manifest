@@ -57,9 +57,6 @@ repopick -P system/core 292788
 ## hardware/interfaces
 repopick 296611
 
-## system/vold
-repopick -t eleven-vold
-
 ## eleven-fde-crash-fix
 repopick -t eleven-fde-crash-fix
 
