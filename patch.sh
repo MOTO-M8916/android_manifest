@@ -57,9 +57,6 @@ repopick -P system/core 292788
 ## hardware/interfaces
 repopick 296611
 
-## eleven-fde-crash-fix
-repopick -t eleven-fde-crash-fix
-
 ## Snap
 cd packages/apps/Snap && git pull "https://github.com/LineageOS/android_packages_apps_Snap" refs/changes/11/294911/1 && cd $TOP
 
