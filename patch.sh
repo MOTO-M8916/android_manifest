@@ -57,9 +57,6 @@ repopick -P system/core 292788
 ## hardware/interfaces
 repopick 296611
 
-## Snap
-cd packages/apps/Snap && git pull "https://github.com/LineageOS/android_packages_apps_Snap" refs/changes/40/298040/3 && cd $TOP
-
 #################################################################
 # PATCHES
 #
