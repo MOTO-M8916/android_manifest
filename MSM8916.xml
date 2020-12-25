@@ -19,6 +19,4 @@
         <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="git" revision="lineage-18.1" />
         <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="git" revision="lineage-18.1" />
 
-        <project name="LineageOS/android_packages_apps_Snap" path="packages/apps/Snap" remote="git" revision="lineage-18.1" />
-
 </manifest>
