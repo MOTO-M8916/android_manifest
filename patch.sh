@@ -48,8 +48,8 @@ function apply_patch {
 ## Device Tree: eleven_m8916
 repopick -P device/motorola/msm8916-common -t 18_moto8916
 
-## Bringup Hax (Disable LiveDisplay & mm-pp-daemon)
-#repopick 296163
+## Fix LiveDisplay legacymm
+repopick 293077/1
 
 ## eleven-ultralegacy-devices
 repopick -P system/core 292788
