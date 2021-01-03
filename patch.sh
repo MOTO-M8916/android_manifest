@@ -45,9 +45,6 @@ function apply_patch {
 # Example: ./vendor/lineage/build/tools/repopick.py [CHANGE_NUMBER]
 #################################################################
 
-## Device Tree: eleven_m8916
-repopick -P device/motorola/msm8916-common -t 18_moto8916
-
 ## Fix LiveDisplay legacymm
 repopick 293077/1
 
