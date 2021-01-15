@@ -48,9 +48,6 @@ function apply_patch {
 ## Fix LiveDisplay legacymm
 repopick 293077/1
 
-## eleven-ultralegacy-devices
-repopick -P system/core 292788
-
 ## hardware/interfaces
 repopick 296611
 
