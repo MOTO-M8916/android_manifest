@@ -2,10 +2,9 @@
 
 . build/envsetup.sh
 
-TOP=${PWD}
-PATCH_DIR=$TOP
+PATCH_DIR=${PWD}
 
-echo "TOP: $TOP"
+echo "TOP: $PATCH_DIR"
 
 # ----------------------------------
 # Colors
@@ -35,24 +34,51 @@ function apply_patch {
 
     cd $1
     git am -3 --ignore-whitespace $2
-    cd $TOP
+    cd $PATCH_DIR
     echo ""
 }
 
 #################################################################
-# CHERRYPICKS
-#
-# Example: ./vendor/lineage/build/tools/repopick.py [CHANGE_NUMBER]
+# CHERRYPICKS                                                   #
+#                                                               #
+# Examples:                                                     #
+# repopick [CHANGE_NUMBER]                                      #
 #################################################################
 
-## Fix LiveDisplay legacymm
-repopick 293077/1
+# Ultra Legacy
+repopick -P art 318097
+repopick -f 287706 -P external/perfetto
+repopick 318458
+repopick -P system/bpf 320591
+repopick -P system/netd 320592
 
-## hardware/interfaces
-repopick 296611
+# hardware/qcom/wlan
+repopick 318781
+
+# packages/apps/Etar
+repopick 319630-319634
+
+# packages/apps/Trebuchet
+repopick 317966-317971 318383-318385 318388
+
+# frameworks/base
+repopick 318459
+
+# Camera
+repopick -t twelve-restore-camera-hal1
+repopick -t twelve-camera-extension
+repopick 320528-320530                              # twelve-qcom-cam
+repopick -P hardware/interfaces 320531-320532       # twelve-qcom-cam
+repopick -t twelve-legacy-camera
+
+# Extras
+repopick 320514
 
 #################################################################
 # PATCHES
 #
 # Example: apply_patch [REPO_DIR] [PATCH_FILE]
 #################################################################
+
+# Display 8916
+apply_patch $PATCH_DIR/hardware/qcom-caf/msm8916/display $PATCH_DIR/0001-hwc-Update-dependencies-for-S.patch
