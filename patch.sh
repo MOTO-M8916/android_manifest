@@ -73,6 +73,7 @@ repopick -t twelve-legacy-camera
 
 # Extras
 repopick 320514
+repopick 317138 317301
 
 #################################################################
 # PATCHES
