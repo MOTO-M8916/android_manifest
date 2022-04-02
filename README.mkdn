@@ -23,14 +23,14 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 4.To initialize your local repository using the LineageOS trees, use a command like this:
 
-    repo init -u git://github.com/LineageOS/android.git -b lineage-19.0 --depth=1
+    repo init -u git://github.com/LineageOS/android.git -b lineage-19.1 --depth=1
      
 
 5.Now create a local_manifests dir and Copy the required manifests in that folder.
 
     mkdir .repo/local_manifests
 
-    wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/lineage-19.0/MSM8916.xml'
+    wget -O .repo/local_manifests/MSM8916.xml 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/lineage-19.1/MSM8916.xml'
     
 6.Then to sync up:
 
@@ -40,9 +40,9 @@ OR, for those with limited bandwidth/storage:
 
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
     
-7.Pick and patch
+7.Pick and patch (Note: copy all /patches to root)
 
-    wget -O .repo/local_manifests/patch.sh 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/lineage-19.0/patch.sh'
+    wget -O .repo/local_manifests/patch.sh 'https://raw.githubusercontent.com/MOTO-M8916/android_manifest/lineage-19.1/patch.sh'
     bash patch.sh
 
 8.Run this command if you used the automatic method of setup above (50GB ccache (onetime requirement))
@@ -53,6 +53,7 @@ OR, for those with limited bandwidth/storage:
 
     export USE_CCACHE=1
     export CCACHE_EXEC=$(command -v ccache)
+    export CCACHE_DIR=$HOME/.ccache
 
 10.To start the build once everything is ready , Run to prepare our devices list
 

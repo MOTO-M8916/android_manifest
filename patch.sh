@@ -45,35 +45,28 @@ function apply_patch {
 # repopick [CHANGE_NUMBER]                                      #
 #################################################################
 
+# android_build_soong
+repopick -f 327111
+
 # Ultra Legacy
-repopick -P art 318097
-repopick -f 287706 -P external/perfetto
-repopick 318458
-repopick -P system/bpf 320591
-repopick -P system/netd 320592
+repopick -P art -f 318097
+repopick -P external/perfetto -f 287706
+repopick 321934 326385
+repopick -P system/bpf -f 320591
+repopick -P system/netd -f 320592
 
-# hardware/qcom/wlan
-repopick 318781
+# frameworks/av
+repopick 320337
 
-# packages/apps/Etar
-repopick 319630-319634
-
-# packages/apps/Trebuchet
-repopick 317966-317971 318383-318385 318388
-
-# frameworks/base
-repopick 318459
-
-# Camera
+# Camera - twelve-qcom-cam - twelve-hal1-legacy
 repopick -t twelve-restore-camera-hal1
 repopick -t twelve-camera-extension
-repopick 320528-320530                              # twelve-qcom-cam
-repopick -P hardware/interfaces 320531-320532       # twelve-qcom-cam
+repopick 320528-320530                              
+repopick -P hardware/interfaces 320531-320532
 repopick -t twelve-legacy-camera
 
 # Extras
 repopick 320514
-repopick 317138 317301
 
 #################################################################
 # PATCHES
@@ -81,5 +74,17 @@ repopick 317138 317301
 # Example: apply_patch [REPO_DIR] [PATCH_FILE]
 #################################################################
 
-# Display 8916
-apply_patch $PATCH_DIR/hardware/qcom-caf/msm8916/display $PATCH_DIR/0001-hwc-Update-dependencies-for-S.patch
+# Davey logspam
+apply_patch $PATCH_DIR/frameworks/base $PATCH_DIR/0001-hwui-Silence-Davey-logs-for-now.patch
+
+# Legacy telephony stuff
+apply_patch $PATCH_DIR/frameworks/opt/telephony $PATCH_DIR/0001-telephony-Squashed-support-for-simactivation-feature.patch
+apply_patch $PATCH_DIR/frameworks/opt/telephony $PATCH_DIR/0002-Avoid-SubscriptionManager-getUriForSubscriptionId-ca.patch
+apply_patch $PATCH_DIR/frameworks/opt/telephony $PATCH_DIR/0003-RIL-Fix-manual-network-selection-with-old-modem.patch
+apply_patch $PATCH_DIR/frameworks/opt/telephony $PATCH_DIR/0004-2G-wants-proper-signal-strength-too.patch
+apply_patch $PATCH_DIR/frameworks/opt/telephony $PATCH_DIR/0005-Telephony-Add-option-for-using-regular-poll-state-fo.patch
+
+# System sepolicy
+apply_patch $PATCH_DIR/system/sepolicy $PATCH_DIR/0001-Fix-storaged-access-to-sys-block-mmcblk0-stat-after-.patch
+apply_patch $PATCH_DIR/system/sepolicy $PATCH_DIR/0002-sepolicy-Treat-proc-based-DT-fstab-the-same-and-sys-.patch
+apply_patch $PATCH_DIR/system/sepolicy $PATCH_DIR/0003-Allow-init-to-write-to-proc-cpu-alignment.patch
